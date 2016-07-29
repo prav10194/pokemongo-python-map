@@ -28,9 +28,9 @@ python setup.py install
 Demo - 
 -------
 
-    $ python main.py -u "trainer-club-id" -p "trainer-club-password" --location "New Delhi, India"
+    $ python main.py -u "trainer-club-id" -p "trainer-club-password" --location "New York, Washington Square""
     [!] Your given location: New, Delhi, India
-    [!] lat/long/alt: 28.6179938 77.2074374 0.0
+    [!] lat/long/alt: -37.78879938 -122.4074374 0.0
     [!] login for: ****
     [+] RPC Session Token: TGT-***-****** ...
     [+] Received API endpoint: https://pgorelease.nianticlabs.com/plfe/208/rpc
