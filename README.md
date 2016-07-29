@@ -1,25 +1,36 @@
 # pokemongo-python-map
-A simple extension of the pokemongo api to display a map with the Pokemons around your area. Also adding functionality to send notifications to mobile using twilio and PushBullet. 
+A simple extension of the pokemongo api to display a map with the Pokemons around your area. 
 
 Some stuff to take care of before using - 
 -------
- * Works only for Trainer club account. Make a new account as there are chances of getting banned. 
+ * Works only for Trainer club account. Make a new account as there are chances of getting banned. Make one here - https://www.pokemon.com/us/pokemon-trainer-club/sign-up/
  * Might show heartbeat errors as the servers are being updated
  * No farming/hatching/catching/spinning supported. You might need to look to other projects for that. (Refer https://www.reddit.com/r/pokemongodev)
  * Refer to requirements.txt for extra libraries to install. 
+ * Add your pokemons which you don't want to show on map in csv file. 
+ * Will add functionality to send notifications to mobile using twilio and PushBullet. 
 
-Pre-requisites - 
+Pre-requisites softwares/libraries - 
 -------
  * Python 2.7/3.4 (Will work with other versions too apart from making some syntactical changes)
  * gmplot package to be installed from the zip given. (Don't install using pip as I have added pokemon icons and made changes in gmplot.py)
- * Pokemon Trainer Club account. Make one here - https://www.pokemon.com/us/pokemon-trainer-club/sign-up/
+
+Steps to install gmplot - 
+-------
+1. Extract the zip content
+2. Open cmd
+3. Run the following commands - 
+```cmd
+cd "folderpath where zip is extracted"
+python setup.py install
+```
 
 Demo - 
 -------
 
     $ python main.py -u "trainer-club-id" -p "trainer-club-password" --location "New Delhi, India"
     [!] Your given location: New, Delhi, India
-    [!] lat/long/alt: 37.7879938 -122.4074374 0.0
+    [!] lat/long/alt: 28.6179938 77.2074374 0.0
     [!] login for: ****
     [+] RPC Session Token: TGT-***-****** ...
     [+] Received API endpoint: https://pgorelease.nianticlabs.com/plfe/208/rpc
@@ -28,6 +39,7 @@ Demo -
     [+] You are playing Pokemon Go since: 2016-07-14 22:48:54
     [+] POKECOIN: 0
     [+] STARDUST: 100
+    Enter number of cells to search : 4 #Keep the value low in beginning
 
     Within one step of LatLng: 37.7861784887,-122.408499387 (222m SW from you):
         (92) Gastly
